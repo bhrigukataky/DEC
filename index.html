@@ -1,0 +1,394 @@
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <title>DEC Web Development Class</title>
+	  <meta name="description" content="DEC Web Development Class ~~ A sample web page for all html tags and elements.">
+	  <meta name="keywords" content="HTML, CSS, JavaScript">
+	  <meta name="author" content="Bhrigu Kumar Kataky">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For page responsive  -->
+	 
+	  <style>
+	    
+		h1,h2,h3,h4,h5.h6 {
+			color: purple;
+		}
+		
+		#para_test {
+			background-color : green;
+		}
+		.test_class {
+			background-color : blue;
+		}
+		
+		div p {
+			color: green;
+		}
+		div > p {
+			color: blue;
+		}
+		div + p {
+			color: yellow;
+		}
+		div ~ p {
+			color: purple;
+		}
+		
+		/* unvisited link */
+		a:link {
+		  color: red;
+		}
+
+		/* visited link */
+		a:visited {
+		  color: green;
+		}
+
+		/* mouse over link */
+		a:hover {
+		  color: hotpink;
+		}
+
+		/* selected link */
+		a:active {
+		  color: blue;
+		}
+		table, th, td {
+		  border:1px solid black;
+		  border-collapse: collapse;
+		}
+		input[type="text"] {
+			background-color : grey;
+		}
+	  
+	  </style>
+	  
+	  <script>
+	  
+	  </script>
+	</head>
+	<body>
+		
+		<h1 style="background-color: red;">This is H1 element</h1>
+		<h2 style="background-color: green; text-align:left;" >This is H2 element</h2>
+		<h3 style="background-color: blue; text-align:center; color:white;" >This is H3 element</h3>
+		<h4 style="background-color: #E5E813; text-align:right;">This is H4 element</h4>
+		<h5 style="background-color: #DE13E8; ">This is H5 element</h5>
+		<h6 style="background-color: #92F0EB;">This is H6 element</h6>
+		
+		<p>This is p element for paragraph. <b>Bold using b element.</b> <strong>This is a strong element</strong>. <i>This is italic</i>. <em>This is for emphasis</em>. <del>Deleted element</del>. <ins>Inserted element<ins>. <sub>Subscript</sub><sup>Super script</sup>. <br> Break </p>
+		<hr>
+		
+		<p style="font-family: Arial, Helvetica, sans-serif;">This is a paragraph with different web font.</p>
+		<p style="font-family: Arial, Helvetica, sans-serif; font-size: 15px;">This is a paragraph with different web font and 15px size.</p>
+		<p style="font-family: Arial, Helvetica, sans-serif; font-size: large;">This is a paragraph with different web font and large font size.</p>
+		<p style="font-family: Arial, Helvetica, sans-serif; font-weight: normal;">This is a paragraph with different web font and font weight normal.</p>
+		<p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">This is a paragraph with different web font and font weight bold.</p>
+		<p style="font-family: Arial, Helvetica, sans-serif; font-weight: 900;">This is a paragraph with different web font and font weight large.</p>
+		<p style="font-family: Arial, Helvetica, sans-serif; font-style: normal;">This is a paragraph with different web font and font style normal.</p>
+		<p style="font-family: Arial, Helvetica, sans-serif; font-style: italic;">This is a paragraph with different web font and font style italic.</p>
+		<p style="font-family: Arial, Helvetica, sans-serif; font-style: oblique;">This is a paragraph with different web font and font style oblique.</p>
+		
+		<hr>
+
+		<p id="para_test" style="border: 1px solid black;">This is a paragraph with normal border.</p>
+		<p class="test_class" style="border-style: dotted;">This is a paragraph with dotted border.</p>
+		<p style="border-style: dashed;">This is a paragraph with dashed border.</p>
+		<p style="border-style: solid;">This is a paragraph with solid border.</p>
+		<p style="border-style: double;">This is a paragraph with double border.</p>
+		<p style="border-style: groove;">This is a paragraph with groove border.</p>
+		<p style="border-style: none;">This is a paragraph with none border.</p>
+		<p style="border-style: hidden;">This is a paragraph with hidden border.</p>
+		
+		<hr>
+		
+		
+		<p style="background-color: blue; color : white;">This is a paragraph with normal padding and margin.</p>
+		<p style="background-color: red; color : white; padding : 10px;">This is a paragraph with 10px padding.</p>
+		<p style="background-color: green; color : white; padding : 10px 20px;">This is a paragraph with  padding 10px 20px.</p>
+		<p style="background-color: yellow; color : black; padding : 10px 20px 30px 40px; ">This is a paragraph with  padding 10px 20px 30px 40px.</p>
+		<p style="background-color: black; color : white; margin : 10px;">This is a paragraph with margin 10px.</p>
+		<p style="background-color: blue; color : white; margin : 10px 20px;">This is a paragraph with margin 10px 20px.</p>
+		<p style="background-color: red; color : white; margin : 10px 20px 30px 40px;">This is a paragraph with margin 10px 20px 30px 40px.</p>
+		
+		<p style="background-color: red; color : white; margin-top : 20px ;">This is a paragraph margin top.</p>
+		<p style="background-color: red; color : white; margin-bottom : 20px ;">This is a paragraph margin bottom.</p>
+		<p style="background-color: red; color : white; margin-left : 20px ;">This is a paragraph with margin left.</p>
+		<p style="background-color: red; color : white; margin-right : 20px ;">This is a paragraph with margin right.</p>
+		
+		<hr>
+		
+		<p>Combination Style</p>
+		
+		<div>
+			<p>Combination Style > operator</p>
+			<p>Combination Style  > operator</p>
+			<section>
+				<p>No change Combination Style</p>
+			</section>
+		
+		</div>
+		<hr>
+		<div>
+			<p>Combination Style + operator</p>
+			<p>Combination Style  + operator</p>
+			<div>
+				<p>No change Combination Style</p>
+			</div>
+			<p>change Combination Style</p>
+			<p>No change Combination Style</p>
+		</div>
+		<hr>
+		<div>
+			<p>Combination Style + operator</p>
+			<p>Combination Style  + operator</p>
+			<div>
+				<p>No change Combination Style</p>
+			</div>
+			<p>change Combination Style</p>
+			<p>change Combination Style</p>
+			<p>change Combination Style</p>
+		</div>
+		
+		<hr>
+		
+		<h2>Styling a link depending on state</h2>
+
+		<p><b><a href="index.html" target="_blank">This is a link</a></b></p>
+		<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+		<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+		
+		<hr>
+		
+		<h2>TABLES</h2>
+		<table>
+		  <tr>
+			<th>Sl</th>
+			<th>Name</th>
+			<th>Contact</th>
+		  </tr>
+		  <tr>
+			<td>Sanjeev</td>
+			<td>Hari</td>
+			<td>Roy</td>
+		  </tr>
+		  <tr>
+			<td>123456789</td>
+			<td>987654321</td>
+			<td>1122334455</td>
+		  </tr>
+		</table>
+		
+		<h2>Cell that spans two columns</h2>
+		<p>To make a cell span more than one column, we use the colspan attribute.</p>
+
+		<table style="width:100%">
+		  <tr>
+			<th colspan="2">Name</th>
+			<th>Age</th>
+		  </tr>
+		  <tr>
+			<td>James</td>
+			<td>Will</td>
+			<td>43</td>
+		  </tr>
+		  <tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>57</td>
+		  </tr>
+		</table>
+		<h2>Cell that spans two rows</h2>
+		<p>To make a cell span more than one row, we use the rowspan attribute.</p>
+
+		<table style="width:100%">
+		  <tr>
+			<th>Name</th>
+			<td>John</td>
+		  </tr>
+		  <tr>
+			<th rowspan="2">Phone</th>
+			<td>555-1234</td>
+		  </tr>
+		  <tr>
+			<td>555-8745</td>
+		  </tr>
+		</table>
+		
+		<hr>
+		
+		<h2>Unordered List</h2>
+		<p>Creates a list with a dot or circle as index</p>
+		<ul>
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ul>
+		<ul style="list-style-type:disc;">
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ul>
+		<ul style="list-style-type:circle;">
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ul>
+		<ul style="list-style-type:square;">
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ul>
+		<ul style="list-style-type:none;">
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ul>
+		
+		<h2>Ordered List</h2>
+		<p>Creates a list with a number or symbol as index(Number 1, 2, 3 etc by default)</p>
+		<ol>
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ol>
+		<ol type="1">
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ol>
+		<ol type="A">
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ol>
+		<ol type="a">
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ol>
+		<ol type="I">
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ol>
+		<ol type="i">
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ol>
+		<ol start="50">
+		  <li>Coffee</li>
+		  <li>Tea</li>
+		  <li>Milk</li>
+		</ol>
+		<p>Nesting also allowed</p>
+		<ol>
+		  <li>Coffee</li>
+		  <li>Tea
+			<ol type="a">
+			  <li>Black tea</li>
+			  <li>Green tea</li>
+			</ol>
+		  </li>
+		  <li>Milk</li>
+		</ol>
+		
+		<h2>Description Lists</h2>
+		<p>A description list is a list of terms, with a description of each term.</p>
+		<dl>
+		  <dt>Coffee</dt>
+		  <dd>- black hot drink</dd>
+		  <dt>Milk</dt>
+		  <dd>- white cold drink</dd>
+		</dl>
+		<hr>
+		
+		
+		<form action="action_page.php" target="_blank" method="post">
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" value="John"><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" value="Doe"><br>
+			<input type="checkbox" id="agree" name="agree" value="0">
+			<label for="agree"> I Agree</label><br>
+			<input type="radio" id="html" name="fav_language" value="HTML">
+			<label for="html">HTML</label><br>
+			<input type="radio" id="css" name="fav_language" value="CSS">
+			<label for="css">CSS</label><br>
+			<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+			<label for="javascript">JavaScript</label><br>
+			<label for="cars">Choose a car:</label>
+			<select id="cars" name="cars">
+				<option value="volvo">Volvo</option>
+				<option value="saab" selected>Saab</option>
+				<option value="fiat">Fiat</option>
+				<option value="audi">Audi</option>
+			</select><br>
+			<textarea name="message" rows="10" cols="30">
+			The cat was playing in the garden.
+			</textarea><br>
+		  <input type="submit" value="Submit">
+		</form>
+		<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+		<hr>
+		
+		<pre>This is a preformated text. Any thing,
+		inside this
+		will appear in the webpage
+		as it is</pre>
+		
+		
+		<article>
+			<h2>Google Chrome</h2>
+			<p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+		</article>
+		<section>
+			<h2>WWF History</h2>
+			<p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+		</section>
+		<nav>
+		  <a href="/html/">HTML</a> |
+		  <a href="/css/">CSS</a> |
+		  <a href="/js/">JavaScript</a> |
+		  <a href="/python/">Python</a>
+		</nav>
+		
+		<aside>
+			<h4>Epcot Center</h4>
+			<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+		</aside>
+		<details>
+		  <summary>Epcot Center</summary>
+		  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+		</details>
+		
+		<article>
+		  <header>
+			<h1>A heading here</h1>
+			<p>Posted by John Doe</p>
+			<p>Some additional information here</p>
+		  </header>
+		  <p>Lorem Ipsum dolor set amet....</p>
+		</article>
+		
+		<img src="Tulips.jpg" alt="Tulip Flowers" width="500" height="600">
+		<audio controls>
+		  <source src="sample.mp3" type="audio/mpeg">
+		  Your browser does not support the audio tag.
+		</audio>
+		<video width="320" height="240" controls>
+		  <source src="movie.mp4" type="video/mp4">
+		  Your browser does not support the video tag.
+		</video>
+		
+		<footer>
+		  <p>Author: Bhrigu Kumar Kataky</p>
+		  <p><a href="mailto:test@gmail.com">test@gmail.com</a></p>
+		</footer>
+		<script>
+		
+	  
+		</script>
+	
+	</body>
+</html>
