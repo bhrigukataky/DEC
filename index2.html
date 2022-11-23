@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <title>DEC Web Development Class - TRANSITION and MEDIA QUERIES</title>
+	  <meta name="description" content="DEC Web Development Class ~~ A sample web page for all html tags and elements.">
+	  <meta name="keywords" content="HTML, CSS, JavaScript">
+	  <meta name="author" content="Bhrigu Kumar Kataky">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For page responsive  -->
+
+	 
+	  <style>
+		
+	  
+	    #item_1{
+			color: #E50CEC; <!-- Colors can be defined in HEX Code -->
+			
+		}
+		.testclass {
+			color : white;
+			background : green;
+		}
+		
+		
+		
+		.div_1 {
+			color:white;
+			padding :50px;
+			width: 100px;
+		    height: 100px;
+		    background-color: red;
+		    animation-name: testdiv;
+		    animation-duration: 5s;
+		}
+		
+		@keyframes testdiv {
+		    from {background-color: red;}
+		    to {background-color: green;}
+		}
+		
+		input[type="text"]:disabled{
+			background-color:grey; 
+			color: white;
+		}
+		@keyframes testdiv2 {
+		    0%   {background-color: red;}
+		    25%  {background-color: yellow;}
+		    50%  {background-color: blue;}
+		    100% {background-color: green;}
+		}
+
+		.div_2 {
+			color:white;
+			padding :50px;
+		    width: 100px;
+		    height: 100px;
+		    background-color: red;
+		    animation-name: testdiv2;
+		    animation-duration: 9s;
+			animation-delay: 3s; <-- wait time before annimation starts / can be negative as well -->
+		}
+		
+		@keyframes testdiv3 {
+		    0%   {background-color:red; left:0px; top:0px;}
+		    25%  {background-color:yellow; left:200px; top:0px;}
+		    50%  {background-color:blue; left:200px; top:200px;}
+		    75%  {background-color:green; left:0px; top:200px;}
+		    100% {background-color:red; left:0px; top:0px;}
+		}
+
+		.div_3 {
+			color:white;
+			padding :50px;
+		    width: 100px;
+		    height: 100px;
+		    position: relative;
+		    background-color: red;
+		    animation-name: testdiv3;
+		    animation-duration: 4s; <-- how long annimation lives -->
+			animation-iteration-count: 3; <-- number of times annimation repeats / default is 1 / if value is 'infinite' it never stops -->
+		}
+		
+		
+		.div_4 {
+		  padding : 50px;
+		  color: white;	
+		  width: 100px;
+		  height: 100px;
+		  background-color: red;
+		  position: relative;
+		  animation-name: testdiv4;
+		  animation-duration: 4s;
+		  animation-direction: reverse;  
+		}
+
+		@keyframes testdiv4 {
+		  0%   {background-color:red; left:0px; top:0px;}
+		  25%  {background-color:yellow; left:200px; top:0px;}
+		  50%  {background-color:blue; left:200px; top:200px;}
+		  75%  {background-color:green; left:0px; top:200px;}
+		  100% {background-color:red; left:0px; top:0px;}
+		}
+		
+		.div_5 {
+		  padding : 50px;
+		  color: white;	
+		  width: 100px;
+		  height: 100px;
+		  background-color: red;
+		  position: relative;
+		  animation-name: testdiv5;
+		  animation-duration: 4s;
+		  animation-iteration-count: 4;
+		  animation-direction: alternate;  
+		}
+
+		@keyframes testdiv5 {
+		  0%   {background-color:red; left:0px; top:0px;}
+		  25%  {background-color:yellow; left:200px; top:0px;}
+		  50%  {background-color:blue; left:200px; top:200px;}
+		  75%  {background-color:green; left:0px; top:200px;}
+		  100% {background-color:red; left:0px; top:0px;}
+		}
+		
+		
+
+	  </style>
+
+	</head>
+	<body>
+	
+		<div class="div_1">
+			This is a sample text.
+		</div> <br>
+		
+		<div class="div_2">
+			This is a sample text.
+		</div><br>
+		
+		<div class="div_3">
+			This is a sample text.
+		</div>
+		
+		<br><br><br>
+		
+		<div class="div_4">
+			This is a sample text.
+		</div>
+		
+		<br><br><br>
+		
+		<div class="div_5">
+			This is a sample text.
+		</div>
+		
+		<h1 id="item_1">This is H1 element</h1>
+		
+		<h2 id="item_2" class="testclass">This is H1 element</h2>
+		
+		
+		<input type="text" id="item_3" placeholder="Enter some text" > <br>
+		
+		<button onclick="alertbutton();">SHOW ALERT</button><br>
+		<button onclick="textbutton();">CHANGE TEXT OF H1</button><br>
+		<button onclick="stylebutton();">CHANGE STYLE OF H1</button><br>
+		<button onclick="inputvaluebutton();">SHOW VALUE OF INPUT</button><br>
+		<button onclick="inputreadonlybutton();">MAKE INPUT READONLY</button><br>
+		<button onclick="inputdisabledbutton();">MAKE INPUT DISABLED</button><br>
+		
+		<script>
+		
+			function alertbutton(){
+				alert("ALERT BUTTON CLICKED");
+			}
+			function textbutton(){
+			
+				document.getElementById("item_1").innerHTML ="Text is Changed";
+				
+			}
+			function stylebutton(){
+				document.getElementById("item_1").style.color ="red";
+			}
+			function inputvaluebutton(){
+				var inputvalue =document.getElementById("item_3").value;
+				alert(inputvalue);
+			}
+			function inputreadonlybutton(){
+				document.getElementById("item_3").readOnly = true;
+			}
+			
+			function inputdisabledbutton(){
+				document.getElementById("item_3").disabled  = true;
+			}
+		
+	  
+		</script>
+	
+	</body>
+</html>
