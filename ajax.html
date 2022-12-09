@@ -1,0 +1,35 @@
+<!--
+https://github.com/tecnickcom/tc-lib-barcode -> PHP sample external library to generate a bar code from given data
+
+https://getcomposer.org/download/ -> Windows composer environment software for installing different packages
+
+https://git-scm.com/downloads  -> GIT environment for windows to intial bash mode in CLI
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt");
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
